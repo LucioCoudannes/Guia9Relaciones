@@ -20,8 +20,13 @@ public class JugadorService {
        
         int cantidad;
         System.out.println("Ingrese la cantidad de jugadores de 1 a 6");
-        cantidad=leer.nextInt();
         
+        try {
+            cantidad = leer.nextInt();
+        } catch (Exception e) {
+            cantidad = 6;     
+        }
+
         if(cantidad<1||cantidad>6){
             cantidad=6;
         }   
