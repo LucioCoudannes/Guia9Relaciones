@@ -6,7 +6,7 @@ public class Jugador {
     
     private Integer ID;
     private String nombre;
-    private boolean mojado;
+    private boolean mojado=false;
 
     public Jugador() {
     }
@@ -40,6 +40,8 @@ public class Jugador {
     public void setMojado(boolean mojado) {
         this.mojado = mojado;
     }
+    
+    
 
     @Override
     public String toString() {

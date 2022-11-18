@@ -37,30 +37,17 @@ public class JugadorService {
         
     }
     
-    public boolean disparo(Revolver r, ArrayList<Jugador> LJ){
+    public boolean disparo(Revolver r){
        
        boolean aux = false;
-        
-        for (int i = 0; i < LJ.size(); i++) {
-            
-            if(rs.mojar(r)){
-                
-                LJ.get(i).setMojado(true);
-                aux= true;
-                
-            }else{
-                rs.siguienteChorro(r);
-            }
-               
-            
-            
-        }
-        
-        
+       
+      if(rs.mojar(r)){
+          aux=true;
+      }else {
+           rs.siguienteChorro(r);
+      }
+      
        return aux;
-
-        
     }
-    
-    
+   
 }

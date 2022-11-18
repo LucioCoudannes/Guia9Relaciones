@@ -31,10 +31,7 @@ public class RevolverService {
         if(Objects.equals(r1.getPosicionA(), r1.getPosicionAgua())){
             
             corchazo=true;
-            System.out.println("no la contas");
-        }else{
             
-            System.out.println("safaste");
         }
         
         return corchazo;
@@ -43,13 +40,13 @@ public class RevolverService {
     public void siguienteChorro(Revolver r1){
         
         if(r1.getPosicionA()<5){
-            
+            //0 a 4
             r1.setPosicionA(r1.getPosicionA()+1);   
-             System.out.println("posicion " + r1.getPosicionA());        
+//             System.out.println("El tambor esta en la posicion " + r1.getPosicionA());        
         }else{
-             
+            // 5 
             r1.setPosicionA(0);
-            System.out.println("posicion " + r1.getPosicionA());
+//            System.out.println("El tambor esta en la posicion " + r1.getPosicionA());
         }
         
         
